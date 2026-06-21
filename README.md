@@ -12,7 +12,7 @@ pnpm dev
 The app is served under the configured GitHub Pages base path:
 
 - Landing page: `http://localhost:5173/whalexy/`
-- Dashboard: `http://localhost:5173/whalexy/dashboard`
+- Dashboard: `http://localhost:5173/whalexy/#/dashboard`
 
 ## Production build
 
@@ -21,7 +21,7 @@ pnpm build
 pnpm preview
 ```
 
-The production output is generated in `dist/`. Vite is configured with `base: '/whalexy/'`, and `public/404.html` restores client-side routes on GitHub Pages.
+The production output is generated in `dist/`. Vite is configured with `base: '/whalexy/'`, and `HashRouter` keeps client-side routes reliable on GitHub Pages.
 
 ## Stack
 

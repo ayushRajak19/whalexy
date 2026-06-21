@@ -6,15 +6,6 @@
     <meta name="description" content="Whalexy is the AI-powered WhatsApp CRM for Indian businesses." />
     <meta name="theme-color" content="#071713" />
     <title>Whalexy — AI WhatsApp CRM</title>
-    <script>
-      (() => {
-        const redirect = sessionStorage.getItem('whalexy:redirect')
-        if (!redirect) return
-        sessionStorage.removeItem('whalexy:redirect')
-        const target = new URL(redirect)
-        history.replaceState(null, '', `${target.pathname}${target.search}${target.hash}`)
-      })()
-    </script>
   </head>
   <body>
     <div id="root"></div>
